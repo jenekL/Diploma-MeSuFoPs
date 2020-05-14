@@ -12,17 +12,22 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Diploma.models;
 
-namespace Diploma
+namespace Diploma.elements
 {
     /// <summary>
-    /// Логика взаимодействия для CreateSurveyPage.xaml
+    /// Логика взаимодействия для AnswerScaleElement.xaml
     /// </summary>
-    public partial class CreateSurveyPage : Page
+    public partial class AnswerScaleElement : UserControl
     {
-        public CreateSurveyPage()
+        private Scale scaleObject;
+
+        public AnswerScaleElement(Scale scale)
         {
             InitializeComponent();
+            this.scaleObject = scale;
+            this.scale.Text = scale.Title;
         }
     }
 }

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Diploma.pages;
 
 namespace Diploma
 {
@@ -26,6 +27,15 @@ namespace Diploma
         }
 
         private void CreateSurveyButton_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            mainFrame.Content = new SetSurveyNamePage();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
 
         }

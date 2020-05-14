@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:Diploma"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="createSurveyButton" Content="Создать тестирование" HorizontalAlignment="Left" Margin="84,152,0,0" VerticalAlignment="Top" Width="186" Height="90" Click="CreateSurveyButton_Click"/>
+    <Grid HorizontalAlignment="Left" Width="792" Height="419" VerticalAlignment="Top">
+        <Menu Height="34" VerticalAlignment="Top" Width="792" HorizontalAlignment="Left">
+            <MenuItem Header="Создать &#xD;&#xA;тестирование&#xD;&#xA;" Height="34" Width="100" Click="MenuItem_Click"/>
+            <MenuItem Header="ВТорой пункт" Height="29" Width="100" Click="MenuItem_Click_1"/>
+        </Menu>
+        <Frame x:Name="mainFrame" Content="Frame" Margin="0,34,0,0" NavigationUIVisibility="Hidden" Width="792" Height="385"/>
     </Grid>
 </Window>
